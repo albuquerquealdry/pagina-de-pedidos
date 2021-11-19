@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form de Registro com validações em JS</title>
+  <link rel="stylesheet" href="css/stylerelis.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Atualização de Sistema</h1>
+    <script src="js/scriptAtualizar.js"></script>
+    <form id="register-form" onsubmit="cadastraUsuario()">
+      <div class="half-box">
+          <label for="lastname">Número do pedido</label>
+          <input type="number" name="lastname" id="numero" placeholder="Digite o numero de pedido do cliente" data-required data-only-letters>
+      </div>
+      <script>
+        function funcao1()
+        {
+        alert("Pedido Atualizado");
+        }
+        </script>
+      <div class="full-box">
+        <input onclick = 'funcao1()' type="submit" onsubmit="" value="Atualizar">
+        
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+</body>
+</html>
